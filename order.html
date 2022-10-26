@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css"
+	type="text/css">
+	<!-- ORDER CSS -->
+   <link rel="stylesheet" href="order.css" type="text/css">
+
+	<!-- BOOTSTRAP -->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <!-- FONT AWESOMEW -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+      <!-- GOOGLE FONTS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,500&family=Kristi&family=Pangolin&display=swap" rel="stylesheet"> 
+<!-- FAVICON -->
+  <link rel="icon" href="images/bread-loaf-svgrepo-com.svg" type="image/x-icon">
+
+	<title>Local Bakery</title>
+</head>
+<body>
+      
+      <!-- NAVBAR  -->
+       <nav class="navbar navbar-expand-md fixed-top ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">sabroso</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" aria-current="page" href="index.html#home">welcome <span class="tilde">~</span> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" href="index.html#menu">menu <span class="tilde">~</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" href="index.html#reservations">reservations <span class="tilde">~</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" href="order.html">order <span class="tilde">~</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize" href="#contact">contact <span class="tilde">~</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-capitalize menu-social" href="#">
+          	    <i class="fa-brands fa-twitter"></i>
+          	    <i class="fa-brands fa-facebook"></i>
+          	    <i class="fa-brands fa-instagram"></i>
+
+
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <!-- END OF NAVBAR  -->
+        
+            <!-- ORDER SECTION -->
+            <section id="order">
+            	<div class="container-fluid">
+            		<div class="row">
+            			 <div class="form-container">
+                    <h1 class="text-capitalize order-title">place your order !</h1>
+                    <h3 class="text-uppercase order-motto">be brave !</h3>
+                    <!-- ACTUAL ORDER FORM -->
+                    <div class="order-form">
+                    	<form action="" class="the-order-form" >
+                         <div class="my-3 row-form">
+  <label for="sandwich-type" class="form-label">Select Your Sandwich</label>
+      
+                    		    <select class="form-select" aria-label="sandwich">
+ 
+  <option value="1">K-burger</option>
+  <option value="2">T-2 Burrito</option>
+  <option value="3">Mega Cheesy</option>
+  <option value="4">The Jibarito Sandwich</option>
+  <option value="5">Only For Meat Lovers</option>
+  <option value="6">The Vegan Choice</option>
+</select>
+</div>
+      <div class="row-form my-3 range">
+      	<label for="customRange3" class="form-label">Cheese</label>
+         <input type="range" class="form-range" min="0" max="5" 
+                  step="1" id="cheese" oninput="this.nextElementSibling.value = this.value">
+                  <output class="px-2">3</output>
+
+      </div>
+      <div class="row-form my-3 range">
+      	<label for="customRange3" class="form-label">Ketchup</label>
+         <input type="range" class="form-range" min="0" max="5" 
+                  step="1" id="ketchup" oninput="this.nextElementSibling.value = this.value">
+                   <output class="px-2">3</output>
+
+      </div>
+      <div class="row-form my-3 range">
+      	<label for="customRange3" class="form-label">Mayonnaise</label>
+         <input type="range" class="form-range" min="0" max="5" 
+                  step="1" id="mayonnaise" oninput="this.nextElementSibling.value = this.value">
+                   <output class="px-2">3</output>
+
+      </div>
+      <!-- TOPPINGS -->
+      <div class="toppings">
+      <div class="row-form my-3">
+      	<div class="form-check form-switch">
+      		<label class="form-check-label" for="flexSwitchCheckChecked">Tomato</label>
+  <input class="form-check-input" type="checkbox" role="switch" id="tomato" checked data-onstyle="warning" value='tomato'>
+  
+</div>
+
+
+      </div>
+      <div class="row-form my-3">
+      	<div class="form-check form-switch">
+      		<label class="form-check-label" for="flexSwitchCheckChecked">Onions</label>
+  <input class="form-check-input" type="checkbox" role="switch" id="onions" checked value="onions">
+  
+</div>
+      </div>
+      <div class="row-form my-3">
+      	<div class="form-check form-switch">
+      		<label class="form-check-label" for="flexSwitchCheckChecked">Pickles</label>
+  <input class="form-check-input" type="checkbox" role="switch" id="pickles" checked value="pickles">
+  
+</div>
+      </div>
+      <div class="row-form my-3">
+      	<div class="form-check form-switch">
+      		<label class="form-check-label" for="flexSwitchCheckChecked">Salad</label>
+  <input class="form-check-input mx-1" type="checkbox" role="switch" id="salad" checked value='salad'>
+  
+</div>
+      </div>
+      <div class="row-form my-3">
+      	<div class="form-check form-switch">
+      		<label class="form-check-label" for="flexSwitchCheckChecked">Real Ham</label>
+  <input class="form-check-input" type="checkbox" role="switch" id="realHam" checked value="ham">
+  
+</div>
+      </div>
+      <div class="row-form my-3">
+      	<div class="form-check form-switch">
+      		<label class="form-check-label" for="flexSwitchCheckChecked">Veggie Meat</label>
+  <input class="form-check-input" type="checkbox" role="switch" id="veggieMeat" checked value="veggie">
+  
+</div>
+      </div>
+      </div>
+        <!-- END OF TOPPINGS -->
+      <div class="row-form my-3 bread">
+      	<div class="form-check">
+  <input class="form-check-input mx-2" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+  <label class="form-check-label" for="flexRadioDefault2">
+    White Bread
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input mx-2" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Rye Bread
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input mx-2" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Grain Bread
+  </label>
+</div>
+      </div>
+          <!-- BUTTONS -->
+          <div class="form-buttons">
+          	<button  type="submit" class="submit-btn text-capitalize"
+          	data-bs-toggle="modal" data-bs-target="#staticBackdrop">prepare sandwich</button>
+          	<input  type="reset" class="reset-btn text-capitalize" value="reset">
+          </div>
+ 
+
+
+
+          <!-- END OF BUTTONS -->
+         
+
+    
+                    	</form>
+                 <!-- MODAL -->
+<!-- Modal -->
+<div class="modal fade px-0 mx-0" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    	<button type="button" class="btn-close px-2" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header">
+
+        <h1 class="modal-title fs-5 text-capitalize" id="staticBackdropLabel">
+        	The details of your order
+        </h1>
+        
+      </div>
+      <div class="modal-body">
+        <div class="modal-motto text-uppercase">enjoy your meal !</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary confirm-btn text-uppercase">confirm order</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+
+
+
+
+                 <!-- END OF MODAL -->
+
+
+
+                    </div> 
+
+
+
+
+            			 </div>
+             		</div>
+            	</div>
+            </section> 
+
+
+            
+            <!-- END OF ORDER SECTION -->
+
+  
+
+
+    <!-- FOOTER CONTACT -->
+    <footer id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="contact-container">
+            <a href="#" class="footer-link text-uppercase">our menu</a>
+            <a href="#" class="footer-link text-uppercase">gallery</a>
+            <a href="#" class="footer-link text-uppercase">culture</a>
+            <div class="contact-motto text-uppercase">sabroso</div>
+            <a href="#" class="footer-link text-uppercase">events</a>
+            <a href="#" class="footer-link text-uppercase">catering</a>
+            <a href="#" class="footer-link text-uppercase">visit us</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- END OF FOOTER CONTACT -->
+
+     <!-- BootSTRAP -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<!-- LOCAL JS -->
+	<!-- <script src="app.js" ></script> -->
+	<!-- ORDER JS -->
+   <script src="order.js"></script>
+
+</body>
+</html>
